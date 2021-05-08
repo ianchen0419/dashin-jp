@@ -4,12 +4,12 @@
 	<div class="page-title">
 		<img src="<?php echo get_stylesheet_directory_uri().'/img/title.png' ?>" height="100%" />
 		<div class="wrapper-size">
-			<h1 class="has-blue-color has-text-align-center">此頁面不存在</h1>
+			<h1 class="has-blue-color has-text-align-center">このページは存在していません</h1>
 		</div>
 	</div>
 </div>
 <main id="contact">
-	<p>您尋找的頁面不存在，或許您想尋找…</p>
+	<p>お探しのページは存在していません。下記メニューリストを通してお求めの情報を見つければ幸いです。</p>
 	<div class="wrapper-size has-gray-color">
 		<?php wp_nav_menu(array('theme_location' => 'full')); ?>
 	</div>

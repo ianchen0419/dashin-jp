@@ -45,6 +45,10 @@ main > *:not(.alignright):not(.alignleft):not(.is-style-slider):not(.alignfull) 
 	margin-top: 80px;
 }
 
+.is-style-slider p {
+	text-shadow: -1px 2px 7px #888;
+}
+
 /*single content*/
 .single-wrapper {
 	max-width: 1000px;
@@ -1013,6 +1017,7 @@ Cover
 	height: calc(100vh - 200px);
 	box-sizing: border-box;
 	flex-basis: 100vw;
+	min-height: 450px;
 }
 
 .dots {
@@ -1058,6 +1063,7 @@ footer {
 footer a {
 	color: inherit;
 }
+
 /********************
 Colors
 ********************/
@@ -1123,6 +1129,11 @@ Heading
 h2 {
 	font-size: 2em;
 	color: #4978BC;
+}
+
+h2 > a {
+	text-decoration: none;
+	color: inherit;
 }
 
 main > .contact-path+h2, main > .wp-block-categories+h2 {

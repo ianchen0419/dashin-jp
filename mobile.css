@@ -198,6 +198,7 @@ Sticky
 ********************/
 .wp-block-media-text[class*="sticky"] {
 	position: relative;
+	padding-bottom: 0; 
 }
 
 .wp-block-media-text[class*="sticky"].is-style-rose-sticky .wp-block-media-text__content,
@@ -229,8 +230,13 @@ Footer
 	display: none;
 }
 
+#footerMenu .custom-logo-link {
+	display: none;
+}
+
 #footerInfo td {
 	text-align: center;
+	padding: 0 16px;
 }
 
 #footerInfo td:nth-child(2) {
@@ -263,7 +269,7 @@ Footer
 	margin: 0 6px;
 }
 
-.menu-social-container .menu a:before {
+body.menu-open #header .menu-social-container .menu a:before {
 	width: 32px;
 	height: 32px;
 }
@@ -375,6 +381,13 @@ Card Blocks
 
 .relates-nav {
 	display: none;
+}
+
+/********************
+Column Blocks
+********************/
+.wp-block-columns .wp-block-column:not(:last-child){
+	margin-bottom: 1.75em;
 }
 
 /********************
