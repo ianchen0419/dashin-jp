@@ -3,7 +3,9 @@ TopPage Slider
 ********************/
 var slider=document.querySelector('.wp-block-group.is-style-slider .wp-block-group__inner-container');
 var slideIndex=1;
-var slideAmount=slider.querySelectorAll('.wp-block-cover').length;
+if(slider){
+	var slideAmount=slider.querySelectorAll('.wp-block-cover').length;
+}
 
 if(slideAmount==1){
 	slider.style.transform='translate(0vw)';
