@@ -3,13 +3,13 @@
 <head>
 	<?php wp_head(); ?>
 	<title><?php bloginfo('name'); wp_title('|'); ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="<?php bloginfo('description') ?>" />
 	<meta name="keywords" content="卵子提供,卵子提供　台湾,卵子提供　大新,卵子提供　海外,卵子提供　費用,卵巣摘出,高齢妊娠,精子提供,着床前診断,PGT-A" />
 	<link rel="stylesheet prefetch" href="<?php bloginfo('template_directory') ?>/style.css" />
 	<link rel="stylesheet prefetch" href="<?php bloginfo('template_directory') ?>/tablet.css" media="screen and (max-width: 1000px)" />
 	<link rel="stylesheet prefetch" href="<?php bloginfo('template_directory') ?>/mobile.css" media="screen and (max-width: 782px)" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-icons/dist/anticons.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-icons/dist/anticons.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
 </head>

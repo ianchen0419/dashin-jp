@@ -128,7 +128,7 @@ function myposts_init(){
 
 
 		$posts=get_posts($args);
-		$output='<div class="wp-block-latest-posts wp-block-latest-posts__list is-grid columns-3 has-dates">';
+		$output='<ul class="wp-block-latest-posts wp-block-latest-posts__list is-grid columns-3 has-dates">';
 
 		for($i=0;$i<3;$i++){
 			$mypost_date=explode(' ', $posts[$i]->post_date)[0];
@@ -160,7 +160,7 @@ function myposts_init(){
 					'</li>';
 		}
 
-		$output.='</div>';
+		$output.='</ul>';
 
 		return $output;
 
