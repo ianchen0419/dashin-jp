@@ -20,7 +20,7 @@
 
 	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 
-	<h2 class="has-black-color">相關主題</h2>
+	<h2 class="has-black-color">関連トピック</h2>
 
 	<?php
 

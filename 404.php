@@ -9,7 +9,7 @@
 	</div>
 </div>
 <main id="contact">
-	<p>お探しのページは存在していません。下記メニューリストを通してお求めの情報を見つければ幸いです。</p>
+	<p>お探しのページは存在していません。以下のメニューよりページをご選択ください。</p>
 	<div class="wrapper-size has-gray-color">
 		<?php wp_nav_menu(array('theme_location' => 'full')); ?>
 	</div>

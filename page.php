@@ -11,7 +11,7 @@
 <main id="contact">
 	<?php
 		make_bread_nav_list($post);
-		
+
 		while(have_posts()): the_post();
 			the_content();
 		endwhile;

@@ -304,4 +304,59 @@ function myguten_register_post_meta() {
 }
 add_action('init', 'myguten_register_post_meta');
 
+/********************
+SMTP
+********************/
+// require_once(ABSPATH . WPINC . '/class-phpmailer.php');
+function my_phpmailer_example($phpmailer) {
+	$phpmailer->isSMTP();
+	$phpmailer->Host='smtp.gmail.com';
+	$phpmailer->SMTPAuth=true;
+	$phpmailer->Port=587;
+	$phpmailer->Username='inquiry.workcapital';
+	$phpmailer->Password='contactwc180623@';
+
+}
+add_action('phpmailer_init', 'my_phpmailer_example');
+
+/********************
+Jetpackユーザーへ自動返信
+********************/
+function send_email_to_user($post_id){
+	$post_string=get_post($post_id)->post_content;
+	$email_content=explode("\n", $post_string)[3];
+	$email=explode(" ", $email_content)[2];
+
+
+	$headers='From: inquiry.workcapital@gmail.com'."\r\n" .
+	'Reply-To: mail@dashin.jp'."\r\n";
+
+	$message=
+	"お客様"."\n\n".
+
+	"この度は大新生殖中心へお問い合わせをいただきまして、ありがとうございます。"."\n".
+	"お問い合わせいただきました内容を確認の上、当院より改めてご連絡させていただきます。"."\n\n".
+
+	"なお追加のご質問等ございましたら、info@dashin.jp までご連絡いただきますようお願いいたします。"."\n".
+	"※本メールアドレス（mail@dashin.jp）は送信専用となっております。"."\n\n".
+
+	"この度は当院にご相談いただきまして誠にありがとうございます。"."\n\n".
+
+	"どうぞよろしくお願いいたします。"."\n\n".
+
+	"---"."\n".
+	"大新生殖中心　Dashin Reproductive Center"."\n".
+	"住所: 台湾 台中巿南屯區大進街449號"."\n".
+	"TEL: +886-4-2320-6969"."\n".
+	"E-mail: info@dashin.jp"."\n".
+	"https://dashin.jp"."\n";
+
+	$to=$email;
+	$subject="大新生殖中心へのお問い合わせありがとうございます";
+
+	$sent=wp_mail($to, $subject, $message, $headers);
+}
+add_action('grunion_after_feedback_post_inserted', 'send_email_to_user')
+
+
 ?>

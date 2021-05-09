@@ -1585,8 +1585,15 @@ main > .wp-block-embed iframe,
 }
 
 /********************
-Jetpack Form Button Align
+Jetpack Form
 ********************/
+
+/*Required Label*/
+.grunion-field-label span {
+	color: #F27179;
+}
+
+/*Button Align*/
 .wp-block-jetpack-button.alignleft {
 	text-align: left;
 }

@@ -97,7 +97,7 @@
 	</div>
 
 	<div class="single-relates">
-		<h2 class="has-black-color">相關主題</h2>
+		<h2 class="has-black-color">関連トピック</h2>
 		<div class="wp-block-latest-posts wp-block-latest-posts__list is-grid columns-3 has-dates">
 			<?php 
 
