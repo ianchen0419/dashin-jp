@@ -25,7 +25,7 @@
 ?>
 <div id="visual">
 	<div class="page-title">
-		<img src="<?php echo get_stylesheet_directory_uri().'/img/title.png' ?>" height="100%" />
+		<img src="<?php echo get_stylesheet_directory_uri().'/img/title.png' ?>" height="100%" alt="見出し背景" />
 		<div class="wrapper-size">
 			<h1 class="has-blue-color has-text-align-center"><?php echo $cat_title_name ?></h1>
 		</div>
