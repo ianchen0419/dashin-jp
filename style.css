@@ -1047,7 +1047,9 @@ Buttons
 	margin-bottom: 0;
 }
 
-.wp-block-button__link {
+/*Jetpack Contact Form ボタン対応*/
+button.wp-block-button__link,
+a.wp-block-button__link {
 	background: #F27179;
 	border-radius: 30px;
 	padding: 8px 10px 8px 20px;
